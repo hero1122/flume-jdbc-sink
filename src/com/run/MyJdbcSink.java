@@ -40,8 +40,8 @@ public class MyJdbcSink extends AbstractSink implements Configurable {
 	  public void configure(Context context) {
 	    driverClass = context.getString("driverClass", "defaultValue");
 	    url = context.getString("url", "defaultValue");
-	    user = context.getString("user", "runvista");
-	    password = context.getString("password", "runco");
+	    user = context.getString("user", "***");
+	    password = context.getString("password", "***");
 	    
 	    jdbcUtil = new JdbcUtil(driverClass, url, user, password);
 	    logger.info("configure.....................");
